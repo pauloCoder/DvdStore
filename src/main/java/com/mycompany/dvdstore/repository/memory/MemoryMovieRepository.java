@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.mycompany.dvdstore.entity.Movie;
 import com.mycompany.dvdstore.repository.IMovieRepository;
 
-@Repository
+//@Repository
 public class MemoryMovieRepository implements IMovieRepository
 {
 	
