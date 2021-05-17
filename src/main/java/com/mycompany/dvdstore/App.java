@@ -12,7 +12,7 @@ public class App
     public static void main( String[] args )
     {
     	
-    	ApplicationContext context = SpringApplication.run(App.class);
+    	ApplicationContext context = SpringApplication.run(App.class , args);
     	MovieController movieController = context.getBean(MovieController.class);
     	
         movieController.addUsingConsole();
