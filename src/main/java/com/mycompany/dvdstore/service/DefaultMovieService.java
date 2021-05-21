@@ -1,5 +1,7 @@
 package com.mycompany.dvdstore.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +27,11 @@ public class DefaultMovieService implements IMovieService
 	public void registerMovie(Movie movie)
 	{
 		movieRepository.add(movie);
+	}
+	
+	@Override
+	public List<Movie> getMovieList() {
+		return movieRepository.list();
 	}
 
 }

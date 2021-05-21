@@ -1,8 +1,12 @@
 package com.mycompany.dvdstore.repository;
 
+import java.util.List;
+
 import com.mycompany.dvdstore.entity.Movie;
 
 public interface IMovieRepository 
 {
 	public void add(Movie movie);
+	
+	public List<Movie> list();
 }
