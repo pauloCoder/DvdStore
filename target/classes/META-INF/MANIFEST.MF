@@ -1,6 +1,5 @@
 Manifest-Version: 1.0
-Build-Jdk-Spec: 11
-Implementation-Title: coredvd
-Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Paul KOUASSI
+Build-Jdk: 11.0.9.1
 Created-By: Maven Integration for Eclipse
 
