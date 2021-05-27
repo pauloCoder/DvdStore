@@ -9,4 +9,6 @@ public interface IMovieService
 	public void registerMovie(Movie movie);
 	
 	public List<Movie> getMovieList();
+	
+	public Movie getMovieById(Long id);
 }

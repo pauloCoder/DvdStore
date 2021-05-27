@@ -34,4 +34,10 @@ public class DefaultMovieService implements IMovieService
 		return movieRepository.list();
 	}
 
+	@Override
+	public Movie getMovieById(Long id) {
+		// TODO Auto-generated method stub
+		return movieRepository.getById(id);
+	}
+
 }

@@ -24,4 +24,11 @@ public class MemoryMovieRepository implements IMovieRepository
 		return movies;
 	}
 
+	@Override
+	public Movie getById(Long id) {
+	    return movies.stream().
+	            filter(m -> m.getId()==id).
+	            findFirst().get();
+	}
+
 }

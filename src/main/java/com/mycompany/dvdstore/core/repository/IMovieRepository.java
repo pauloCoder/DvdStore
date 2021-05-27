@@ -9,4 +9,6 @@ public interface IMovieRepository
 	public void add(Movie movie);
 	
 	public List<Movie> list();
+	
+	public Movie getById(Long id);
 }
