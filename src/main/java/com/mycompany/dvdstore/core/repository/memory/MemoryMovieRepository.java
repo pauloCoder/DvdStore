@@ -10,11 +10,14 @@ import com.mycompany.dvdstore.core.repository.IMovieRepository;
 public class MemoryMovieRepository implements IMovieRepository
 {
 	
+	
 	private static List<Movie> movies = new ArrayList<Movie>();
+	private static Long compteur = 0L;
 	
 	@Override
 	public void add(Movie movie)
 	{
+		movie.setId(++compteur);
 		movies.add(movie);
 		System.out.println("Memory : The movie " + movie.getTitle() + " has been added.");
 	}

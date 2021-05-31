@@ -37,8 +37,11 @@ public class FileMovieRepository implements IMovieRepository
 	{
 		try
 		{
+			long lastId = list().stream().map(Movie::getId).max(Long::compare).orElse(0L);
+			movie.setId(lastId+1);
 		    writer = new FileWriter(file,true);
-		    writer.write(movie.getTitle() + ";" + movie.getGenre()+ "\n");
+		    writer.write(movie.getId()+";"+movie.getTitle()+";"+movie.getGenre()+";"
+		    			 +movie.getDescription()+"\n");
 			System.out.println("File : The movie " + movie.getTitle() + " has been added.");
 		    writer.close();
 		}
