@@ -24,9 +24,10 @@ public class DefaultMovieService implements IMovieService
 	}
 
 	@Override
-	public void registerMovie(Movie movie)
+	public Movie registerMovie(Movie movie)
 	{
 		movieRepository.add(movie);
+		return movie;
 	}
 	
 	@Override
