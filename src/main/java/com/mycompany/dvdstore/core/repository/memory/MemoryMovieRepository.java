@@ -15,11 +15,12 @@ public class MemoryMovieRepository implements IMovieRepository
 	private static Long compteur = 0L;
 	
 	@Override
-	public void add(Movie movie)
+	public Movie add(Movie movie)
 	{
 		movie.setId(++compteur);
 		movies.add(movie);
 		System.out.println("Memory : The movie " + movie.getTitle() + " has been added.");
+		return movie;
 	}
 	
 	@Override

@@ -15,7 +15,7 @@ import org.springframework.stereotype.Repository;
 import com.mycompany.dvdstore.core.entity.Movie;
 import com.mycompany.dvdstore.core.repository.IMovieRepository;
 
-@Repository
+//@Repository
 public class FileMovieRepository implements IMovieRepository
 {
 	
@@ -33,7 +33,7 @@ public class FileMovieRepository implements IMovieRepository
 	}
 
 	@Override
-	public void add(Movie movie)
+	public Movie add(Movie movie)
 	{
 		try
 		{
@@ -49,6 +49,7 @@ public class FileMovieRepository implements IMovieRepository
 		{
 		     e.printStackTrace();
 		}
+		return movie;
 	}
 	
 	@Override

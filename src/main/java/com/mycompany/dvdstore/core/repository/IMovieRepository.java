@@ -6,7 +6,7 @@ import com.mycompany.dvdstore.core.entity.Movie;
 
 public interface IMovieRepository 
 {
-	public void add(Movie movie);
+	public Movie add(Movie movie);
 	
 	public List<Movie> list();
 	
