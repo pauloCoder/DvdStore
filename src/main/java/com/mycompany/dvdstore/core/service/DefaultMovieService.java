@@ -26,19 +26,19 @@ public class DefaultMovieService implements IMovieService
 	@Override
 	public Movie registerMovie(Movie movie)
 	{
-		movieRepository.add(movie);
+		movieRepository.save(movie);
 		return movie;
 	}
 	
 	@Override
-	public List<Movie> getMovieList() {
-		return movieRepository.list();
+	public Iterable<Movie> getMovieList() {
+		return movieRepository.findAll();
 	}
 
 	@Override
 	public Movie getMovieById(Long id) {
 		// TODO Auto-generated method stub
-		return movieRepository.getById(id);
+		return movieRepository.findById(id).orElseThrow();
 	}
 
 }

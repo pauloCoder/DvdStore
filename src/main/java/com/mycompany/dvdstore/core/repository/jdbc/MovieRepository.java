@@ -13,6 +13,7 @@ import org.springframework.stereotype.Repository;
 import com.mycompany.dvdstore.core.entity.Movie;
 import com.mycompany.dvdstore.core.repository.IMovieRepository;
 
+/**
 @Repository
 public class MovieRepository implements IMovieRepository {
 	
@@ -58,7 +59,9 @@ public class MovieRepository implements IMovieRepository {
 						    		  		 rs.getString("TITLE"),
 						    		  		 rs.getString("GENRE"),
 						    		  		 rs.getString("DESCRIPTION")
-						    		  		 ));
+						    		  		 )
+						      				);
 	}
 
 }
+*/
