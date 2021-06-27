@@ -35,10 +35,16 @@
 	
 	<dependency>
 	      <groupId>org.springframework.data</groupId>
-	      <artifactId>spring-data-jdbc</artifactId>
-	      <version>2.2.1</version>
+	      <artifactId>spring-data-jpa</artifactId>
+	      <version>2.5.2</version>
 	</dependency>
-    
+	
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-core</artifactId>
+	    <version>5.5.3.Final</version>
+	</dependency>
+	
   </dependencies>
 
   <build>

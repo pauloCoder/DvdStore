@@ -37,7 +37,6 @@ public class DefaultMovieService implements IMovieService
 
 	@Override
 	public Movie getMovieById(Long id) {
-		// TODO Auto-generated method stub
 		return movieRepository.findById(id).orElseThrow();
 	}
 

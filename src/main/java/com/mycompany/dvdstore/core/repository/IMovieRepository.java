@@ -1,6 +1,5 @@
 package com.mycompany.dvdstore.core.repository;
 
-import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
