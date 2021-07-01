@@ -1,4 +1,4 @@
-package com.mycompany.dvdstore.core.entity;
+package com.mycompany.dvdstore.entity;
 
 
 import javax.persistence.*;
