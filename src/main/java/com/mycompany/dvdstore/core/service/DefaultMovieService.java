@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.mycompany.dvdstore.core.entity.Movie;
 import com.mycompany.dvdstore.core.repository.IMovieRepository;
@@ -25,6 +26,7 @@ public class DefaultMovieService implements IMovieService
 	}
 
 	@Override
+	@Transactional
 	public Movie registerMovie(Movie movie)
 	{
 		movieRepository.save(movie);
