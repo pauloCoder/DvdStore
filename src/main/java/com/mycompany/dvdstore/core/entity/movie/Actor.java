@@ -1,4 +1,4 @@
-package com.mycompany.dvdstore.core.entity;
+package com.mycompany.dvdstore.core.entity.movie;
 
 
 import javax.persistence.*;
@@ -9,8 +9,10 @@ public class Actor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    
     @Column(nullable = false,length = 20)
     private String firstName;
+    
     @Column(length = 20)
     private String lastName;
 

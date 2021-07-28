@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import com.mycompany.dvdstore.core.entity.Movie;
+import com.mycompany.dvdstore.core.entity.movie.Movie;
 import com.mycompany.dvdstore.core.repository.IMovieRepository;
 
 //@Repository

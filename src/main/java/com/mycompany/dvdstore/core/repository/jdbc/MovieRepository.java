@@ -10,7 +10,7 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
-import com.mycompany.dvdstore.core.entity.Movie;
+import com.mycompany.dvdstore.core.entity.movie.Movie;
 import com.mycompany.dvdstore.core.repository.IMovieRepository;
 
 /**

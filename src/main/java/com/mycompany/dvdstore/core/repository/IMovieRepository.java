@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.EntityGraph.EntityGraphType;
 import org.springframework.data.repository.CrudRepository;
 
-import com.mycompany.dvdstore.core.entity.Movie;
+import com.mycompany.dvdstore.core.entity.movie.Movie;
 
 public interface IMovieRepository extends CrudRepository<Movie, Long>
 {

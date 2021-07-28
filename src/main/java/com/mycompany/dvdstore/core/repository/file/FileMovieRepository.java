@@ -12,7 +12,8 @@ import java.util.Optional;
 import java.util.stream.StreamSupport;
 
 import org.springframework.beans.factory.annotation.Value;
-import com.mycompany.dvdstore.core.entity.Movie;
+
+import com.mycompany.dvdstore.core.entity.movie.Movie;
 import com.mycompany.dvdstore.core.repository.IMovieRepository;
 
 //@Repository

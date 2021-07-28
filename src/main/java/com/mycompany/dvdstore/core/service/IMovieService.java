@@ -1,6 +1,6 @@
 package com.mycompany.dvdstore.core.service;
 
-import com.mycompany.dvdstore.core.entity.Movie;
+import com.mycompany.dvdstore.core.entity.movie.Movie;
 
 public interface IMovieService 
 {
