@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.mycompany.dvdstore.core.entity.movie.Movie;
 import com.mycompany.dvdstore.core.repository.IMovieRepository;
 
+@Deprecated
 @Service
 public class DefaultMovieService implements IMovieService
 {
