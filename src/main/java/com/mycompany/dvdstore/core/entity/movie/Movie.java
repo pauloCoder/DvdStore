@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@NamedEntityGraph(name = "movie-actors" , attributeNodes = {@NamedAttributeNode("mainActor")})
 public class Movie {
 
     @Id
