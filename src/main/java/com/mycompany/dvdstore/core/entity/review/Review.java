@@ -6,6 +6,7 @@ import javax.persistence.*;
 import com.mycompany.dvdstore.core.entity.movie.Movie;
 
 @Entity
+@NamedEntityGraph(name = "review-user" , attributeNodes = @NamedAttributeNode("reviewer"))
 public class Review {
 
     @Id
